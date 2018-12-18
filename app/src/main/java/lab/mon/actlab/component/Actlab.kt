@@ -14,28 +14,39 @@ class Actlab : BaseActivity() {
         print("oncreate")
     }
 
+    override fun onStart() {
+        super.onStart()
+        print("onStart")
+    }
+
     override fun onResume() {
         super.onResume()
+        print("onResume")
     }
 
     override fun onNewIntent(intent: Intent?) {
         super.onNewIntent(intent)
+        print("onNewIntent")
     }
 
     override fun onRestart() {
         super.onRestart()
+        print("onRestart")
     }
 
     override fun onPause() {
         super.onPause()
+        print("onPause")
     }
 
     override fun onStop() {
         super.onStop()
+        print("onStop")
     }
 
     override fun onDestroy() {
         super.onDestroy()
+        print("onDestory")
     }
 
     val DEBBUG = true
