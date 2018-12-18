@@ -1,4 +1,4 @@
-package labb.toto.actlab
+package lab.mon.actlab
 
 import org.junit.Test
 
