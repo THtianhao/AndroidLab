@@ -1,4 +1,4 @@
-package lab.mon.actlab.component
+package lab.mon.actlab.component.launchmode
 
 import android.util.Log
 
