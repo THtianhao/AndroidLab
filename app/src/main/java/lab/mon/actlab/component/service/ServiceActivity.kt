@@ -11,12 +11,7 @@ import kotlinx.android.synthetic.main.activity_service.*
 import lab.mon.actlab.R
 
 class ServiceActivity : AppCompatActivity() {
-    val DEBBUG = true
-    private fun print(message: String) {
-        if (DEBBUG) {
-            Log.i("toto" + this::class.simpleName, message)
-        }
-    }
+
 
     var bind = InterService.Mybinder();
     override fun onCreate(savedInstanceState: Bundle?) {

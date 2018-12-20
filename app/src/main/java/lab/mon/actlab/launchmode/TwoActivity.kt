@@ -1,19 +1,19 @@
-package lab.mon.actlab.component.launchmode
+package lab.mon.actlab.launchmode
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import lab.mon.actlab.R
 
-class ThreeActivity : BaseActivity() {
+class TwoActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_three)
+        setContentView(R.layout.activity_two)
     }
 
     fun jump(v: View) {
-        startActivity(Intent(this, Actlab::class.java))
+        startActivity(Intent(this, ThreeActivity::class.java))
 
     }
 }

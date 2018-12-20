@@ -11,12 +11,12 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
         <activity
-                android:name=".component.launchmode.Actlab"
+                android:name="lab.mon.actlab.launchmode.Actlab"
                 android:launchMode="standard">
         </activity>
-        <activity android:name=".component.launchmode.TwoActivity">
+        <activity android:name="lab.mon.actlab.launchmode.TwoActivity">
         </activity>
-        <activity android:name=".component.launchmode.ThreeActivity">
+        <activity android:name="lab.mon.actlab.launchmode.ThreeActivity">
         </activity>
         <activity android:name=".component.service.ServiceActivity">
         </activity>
@@ -31,10 +31,22 @@
         <activity android:name=".component.ComponseActivity">
         </activity>
 
-        <service android:name=".component.service.InterService"
-                 android:enabled="true"
-                 android:exported="true">
+        <service
+                android:name=".component.service.InterService"
+                android:enabled="true"
+                android:exported="true">
         </service>
+
+        <service
+                android:name=".component.service.RemoteService"
+                android:process="com.mon.remoteservice">
+            <intent-filter>
+                <action android:name="com.zihao.remoteservice.RemoteService"/>
+            </intent-filter>
+        </service>
+
+        <activity android:name=".component.service.RemoteServiceActivity">
+        </activity>
     </application>
 
 </manifest>

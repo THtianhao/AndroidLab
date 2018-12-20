@@ -5,7 +5,8 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_componse.*
 import lab.mon.actlab.R
-import lab.mon.actlab.component.launchmode.Actlab
+import lab.mon.actlab.component.service.RemoteServiceActivity
+import lab.mon.actlab.launchmode.Actlab
 import lab.mon.actlab.component.service.ServiceActivity
 
 class ComponseActivity : AppCompatActivity() {
@@ -22,6 +23,10 @@ class ComponseActivity : AppCompatActivity() {
         }
         componse_service.setOnClickListener {
             startActivity(Intent(this, ServiceActivity::class.java))
+        }
+        componse_remote_service.setOnClickListener {
+            startActivity(Intent(this, RemoteServiceActivity::class.java))
+
         }
     }
 }
