@@ -49,7 +49,7 @@ class Actlab : BaseActivity() {
         print("onDestory")
     }
 
-    val DEBBUG = true
+    val DEBBUG = false
     private fun print(message: String) {
         if (DEBBUG) {
             Log.i("toto" + this::class.simpleName, message)

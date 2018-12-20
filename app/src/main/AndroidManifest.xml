@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          xmlns:tools="http://schemas.android.com/tools" package="lab.mon.actlab">
+          xmlns:tools="http://schemas.android.com/tools"
+          package="lab.mon.actlab">
 
     <application
             android:allowBackup="true"
@@ -9,8 +10,17 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name="lab.mon.actlab.component.launchmode.Actlab"
-                  android:launchMode="standard">
+        <activity
+                android:name=".component.launchmode.Actlab"
+                android:launchMode="standard">
+        </activity>
+        <activity android:name=".component.launchmode.TwoActivity">
+        </activity>
+        <activity android:name=".component.launchmode.ThreeActivity">
+        </activity>
+        <activity android:name=".component.service.ServiceActivity">
+        </activity>
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW"/>
                 <action android:name="android.intent.action.MAIN"/>
@@ -18,11 +28,13 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name="lab.mon.actlab.component.launchmode.TwoActivity"
-        >
+        <activity android:name=".component.ComponseActivity">
         </activity>
-        <activity android:name="lab.mon.actlab.component.launchmode.ThreeActivity">
-        </activity>
+
+        <service android:name=".component.service.InterService"
+                 android:enabled="true"
+                 android:exported="true">
+        </service>
     </application>
 
 </manifest>
