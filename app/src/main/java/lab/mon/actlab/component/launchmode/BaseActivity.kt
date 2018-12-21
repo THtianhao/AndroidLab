@@ -1,4 +1,4 @@
-package lab.mon.actlab.launchmode
+package lab.mon.actlab.component.launchmode
 
 import android.support.v7.app.AppCompatActivity
 

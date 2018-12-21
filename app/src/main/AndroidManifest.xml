@@ -4,6 +4,7 @@
           package="lab.mon.actlab">
 
     <application
+            android:name=".TApplication"
             android:allowBackup="true"
             android:icon="@mipmap/ic_launcher"
             android:label="@string/app_name"
@@ -11,12 +12,12 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
         <activity
-                android:name="lab.mon.actlab.launchmode.Actlab"
+                android:name=".component.launchmode.Actlab"
                 android:launchMode="standard">
         </activity>
-        <activity android:name="lab.mon.actlab.launchmode.TwoActivity">
+        <activity android:name=".component.launchmode.TwoActivity">
         </activity>
-        <activity android:name="lab.mon.actlab.launchmode.ThreeActivity">
+        <activity android:name=".component.launchmode.ThreeActivity">
         </activity>
         <activity android:name=".component.service.ServiceActivity">
         </activity>
@@ -36,7 +37,6 @@
                 android:enabled="true"
                 android:exported="true">
         </service>
-
         <service
                 android:name=".component.service.RemoteService"
                 android:process="com.mon.remoteservice">
@@ -47,6 +47,17 @@
 
         <activity android:name=".component.service.RemoteServiceActivity">
         </activity>
+        <activity android:name=".adapter.AdapterActivity">
+        </activity>
+        <activity android:name=".adapter.androideight.AdapterEightActivity">
+        </activity>
+
+        <service
+                android:name=".adapter.androideight.AdapterEightService"
+                android:exported="false"
+                android:process=":mon.eight"
+                android:permission="android.permission.BIND_JOB_SERVICE">
+        </service>
     </application>
 
 </manifest>
