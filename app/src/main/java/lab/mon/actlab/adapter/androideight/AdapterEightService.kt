@@ -16,6 +16,8 @@ class AdapterEightService : JobIntentService() {
     val handler = object : Handler() {
         override fun handleMessage(msg: Message?) {
             super.handleMessage(msg)
+            printLog("totototototototo")
+            sendEmptyMessageDelayed(1, 1000)
         }
     }
 
@@ -30,7 +32,7 @@ class AdapterEightService : JobIntentService() {
     override fun onHandleWork(intent: Intent) {
         val extra = intent.getStringExtra("1")
         printLog(extra)
-        handler.sendEmptyMessageDelayed(1,5000)
+        handler.sendEmptyMessageDelayed(1, 5000)
 
     }
 }

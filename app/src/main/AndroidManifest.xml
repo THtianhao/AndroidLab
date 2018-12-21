@@ -55,7 +55,7 @@
         <service
                 android:name=".adapter.androideight.AdapterEightService"
                 android:exported="false"
-                android:process=":mon.eight"
+                android:process="mon.eight.asd"
                 android:permission="android.permission.BIND_JOB_SERVICE">
         </service>
     </application>
