@@ -22,7 +22,7 @@ class AdapterEightActivity : AppCompatActivity() {
         override fun handleMessage(msg: Message?) {
             super.handleMessage(msg)
             thread {
-                val intent = Intent(this@AdapterEightActivity, AdapterEightService::class.java)
+                val intent = Intent(TApplication.instance, AdapterEightService::class.java)
                 intent.putExtra("1", "asd")
                 AdapterEightService.enqueueWork(this@AdapterEightActivity, intent)
             }
