@@ -35,8 +35,8 @@
         <service
                 android:name=".component.service.InterService"
                 android:enabled="true"
-                android:process=":com.abc"
-                android:exported="true">
+                android:exported="true"
+                android:process=":com.abc">
         </service>
         <service
                 android:name=".component.service.RemoteService"
@@ -56,9 +56,12 @@
         <service
                 android:name=".adapter.androideight.AdapterEightService"
                 android:exported="false"
-                android:process="mon.eight.asd"
-                android:permission="android.permission.BIND_JOB_SERVICE">
+                android:permission="android.permission.BIND_JOB_SERVICE"
+                android:process="mon.eight.asd">
         </service>
+
+        <activity android:name=".viewdispath.ViewDispathActivity">
+        </activity>
     </application>
 
 </manifest>

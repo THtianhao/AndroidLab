@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-        android:orientation="vertical"
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
@@ -14,7 +14,7 @@
             android:text="bigcomponse"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" tools:layout_editor_absoluteY="3dp" tools:layout_editor_absoluteX="3dp"
-            />
+    />
 
     <Button
             android:id="@+id/adapter"
@@ -22,5 +22,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" tools:layout_editor_absoluteY="3dp" tools:layout_editor_absoluteX="3dp"
     />
+    <Button
+            android:id="@+id/mian_view_dispath"
+            android:text="事件分发"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
 </LinearLayout>
