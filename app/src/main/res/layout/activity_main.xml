@@ -23,8 +23,19 @@
             android:layout_height="wrap_content" tools:layout_editor_absoluteY="3dp" tools:layout_editor_absoluteX="3dp"
     />
     <Button
-            android:id="@+id/mian_view_dispath"
+            android:id="@+id/mian_view_anim"
             android:text="事件分发"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    <Button
+            android:id="@+id/mian_view_animation"
+            android:text="动画"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    <Button
+            android:id="@+id/mian_json"
+            android:text="json"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 

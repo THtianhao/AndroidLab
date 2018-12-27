@@ -26,7 +26,7 @@ class DispathViewGroup1 @JvmOverloads constructor(
 
     override fun onTouchEvent(event: MotionEvent?): Boolean {
         printLog(this::class.simpleName + " = onTouchEvent")
-        return super.onTouchEvent(event)
+        return true
     }
 
 

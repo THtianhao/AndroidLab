@@ -62,6 +62,14 @@
 
         <activity android:name=".viewdispath.ViewDispathActivity">
         </activity>
+        <activity android:name=".viewdraw.ViewDrawActivity">
+        </activity>
+        <activity android:name=".animations.AnimActivity">
+        </activity>
+        <activity android:name=".animations.AnimTweenActivity">
+        </activity>
+        <activity android:name=".json.JsonActivity">
+        </activity>
     </application>
 
 </manifest>
