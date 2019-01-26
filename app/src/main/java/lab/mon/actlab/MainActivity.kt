@@ -7,8 +7,8 @@ import kotlinx.android.synthetic.main.activity_main.*
 import lab.mon.actlab.adapter.AdapterActivity
 import lab.mon.actlab.animations.AnimActivity
 import lab.mon.actlab.component.ComponseActivity
+import lab.mon.actlab.java.reflect.ReflectActivity
 import lab.mon.actlab.json.JsonActivity
-import lab.mon.actlab.viewdispath.ViewDispathActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -30,6 +30,9 @@ class MainActivity : AppCompatActivity() {
         }
         mian_json.setOnClickListener {
             startActivity(Intent(this, JsonActivity::class.java))
+        }
+        mian_reflect.setOnClickListener {
+            startActivity(Intent(this, ReflectActivity::class.java))
         }
     }
 }
