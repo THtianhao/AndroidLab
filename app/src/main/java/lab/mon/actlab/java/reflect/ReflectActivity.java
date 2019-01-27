@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import lab.mon.actlab.R;
 
-import java.lang.annotation.Inherited;
 import java.lang.reflect.Field;
 import java.util.HashSet;
 import java.util.Set;
@@ -58,10 +57,21 @@ public  class  ReflectActivity<T,V> extends AppCompatActivity implements View.On
         getAllMember();
         getDeclaredMember();
         getDeclaredclass();
-//        ClassDeclarationSpy spy =new ClassDeclarationSpy();
+        ClassDeclarationSpy spy =new ClassDeclarationSpy();
 //        spy.ClassDeclarationSpy("lab.mon.actlab.java.reflect.ReflectActivity","lab.mon.actlab.MainActivity");
-        ClassSpy classSpy =new ClassSpy();
-        classSpy.classSpy("lab.mon.actlab.java.reflect.ReflectActivity",ClassMember.ALL.name());
+//        ClassSpy classSpy =new ClassSpy();
+//        classSpy.classSpy("lab.mon.actlab.java.reflect.ReflectActivity",ClassMember.ALL.name());
+//        FieldSpy fieldSpy =new FieldSpy();
+//        fieldSpy.fieldSpy("lab.mon.actlab.java.reflect.FieldSpy","b");
+//        FieldModifierSpy fieldModifierSpy =new FieldModifierSpy();
+//        fieldModifierSpy.fieldModifierSpy(FieldModifierSpy.class.getName(),"voiatile");
+//        fieldModifierSpy.fieldModifierSpy(Spy.class.getName(),"public");
+//        fieldModifierSpy.fieldModifierSpy(FieldModifierSpy.Inner.class.getName(),"final");
+//        fieldModifierSpy.fieldModifierSpy(Spy.class.getName(),"private","static","final");
+//          Book book =new Book();
+//          book.main();
+        MethodSpy methodSpy = new MethodSpy();
+        methodSpy.main("java.lang.Class","getConstructor");
         try {
             getFiledClass();
         } catch (NoSuchFieldException e) {
