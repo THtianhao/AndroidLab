@@ -57,7 +57,7 @@ public  class  ReflectActivity<T,V> extends AppCompatActivity implements View.On
         getAllMember();
         getDeclaredMember();
         getDeclaredclass();
-        ClassDeclarationSpy spy =new ClassDeclarationSpy();
+//        ClassDeclarationSpy spy =new ClassDeclarationSpy();
 //        spy.ClassDeclarationSpy("lab.mon.actlab.java.reflect.ReflectActivity","lab.mon.actlab.MainActivity");
 //        ClassSpy classSpy =new ClassSpy();
 //        classSpy.classSpy("lab.mon.actlab.java.reflect.ReflectActivity",ClassMember.ALL.name());
@@ -70,8 +70,13 @@ public  class  ReflectActivity<T,V> extends AppCompatActivity implements View.On
 //        fieldModifierSpy.fieldModifierSpy(Spy.class.getName(),"private","static","final");
 //          Book book =new Book();
 //          book.main();
-        MethodSpy methodSpy = new MethodSpy();
-        methodSpy.main("java.lang.Class","getConstructor");
+//        MethodSpy methodSpy = new MethodSpy();
+//        methodSpy.main("java.lang.Class","getConstructor");
+//        methodSpy.main("java.lang.Class","cast");
+//        MethodParameterSpy methodParameterSpy =new MethodParameterSpy();
+//        methodParameterSpy.main(ExampleMethods.class.getCanonicalName());
+        MethodModifierSpy methodModifierSpy =new MethodModifierSpy();
+        methodModifierSpy.main("java.lang.String","compareTo");
         try {
             getFiledClass();
         } catch (NoSuchFieldException e) {
