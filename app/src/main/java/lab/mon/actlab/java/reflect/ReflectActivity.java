@@ -12,7 +12,7 @@ import java.util.Set;
 
 //ReflectActivity annotation
 @Deprecated
-public  class  ReflectActivity<T,V> extends AppCompatActivity implements View.OnClickListener {
+public class ReflectActivity<T, V> extends AppCompatActivity implements View.OnClickListener {
 
     public int reflectInt = 1;
 
@@ -75,8 +75,13 @@ public  class  ReflectActivity<T,V> extends AppCompatActivity implements View.On
 //        methodSpy.main("java.lang.Class","cast");
 //        MethodParameterSpy methodParameterSpy =new MethodParameterSpy();
 //        methodParameterSpy.main(ExampleMethods.class.getCanonicalName());
-        MethodModifierSpy methodModifierSpy =new MethodModifierSpy();
-        methodModifierSpy.main("java.lang.String","compareTo");
+//        MethodModifierSpy methodModifierSpy =new MethodModifierSpy();
+//        methodModifierSpy.main("java.lang.String","compareTo");
+//        Deet deet = new Deet();
+//        deet.main(Deet.class.getCanonicalName(),"ja", "JP", "JP");
+//        deet.main(Deet.class.getCanonicalName(),"xx", "XX", "XX");
+        InvokeMain invokeMain = new InvokeMain();
+        invokeMain.main( Deet.class.getCanonicalName(),Deet.class.getCanonicalName(), "ja", "JP", "JP");
         try {
             getFiledClass();
         } catch (NoSuchFieldException e) {
@@ -117,7 +122,6 @@ public  class  ReflectActivity<T,V> extends AppCompatActivity implements View.On
     }
 
     //匿名类获取
-
 
 
 }
