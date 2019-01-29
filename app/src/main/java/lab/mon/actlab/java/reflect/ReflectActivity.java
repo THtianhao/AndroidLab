@@ -5,6 +5,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import lab.mon.actlab.R;
+import lab.mon.actlab.java.reflectInter.ReflectMain;
 
 import java.lang.reflect.Field;
 import java.util.HashSet;
@@ -80,8 +81,10 @@ public class ReflectActivity<T, V> extends AppCompatActivity implements View.OnC
 //        Deet deet = new Deet();
 //        deet.main(Deet.class.getCanonicalName(),"ja", "JP", "JP");
 //        deet.main(Deet.class.getCanonicalName(),"xx", "XX", "XX");
-        InvokeMain invokeMain = new InvokeMain();
-        invokeMain.main( Deet.class.getCanonicalName(),Deet.class.getCanonicalName(), "ja", "JP", "JP");
+//        InvokeMain invokeMain = new InvokeMain();
+//        invokeMain.main( Deet.class.getCanonicalName(),Deet.class.getCanonicalName(), "ja", "JP", "JP");
+        ReflectMain reflectMain = new ReflectMain();
+        reflectMain.reflectinterMain();
         try {
             getFiledClass();
         } catch (NoSuchFieldException e) {
