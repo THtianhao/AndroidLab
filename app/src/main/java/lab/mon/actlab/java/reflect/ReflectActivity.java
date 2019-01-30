@@ -5,6 +5,8 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import lab.mon.actlab.R;
+import lab.mon.actlab.java.reflect.array.ArrayCreator;
+import lab.mon.actlab.java.reflect.array.ArrayFind;
 import lab.mon.actlab.java.reflect.construct.ConstructorTroubleAgain;
 import lab.mon.actlab.java.reflect.construct.ConstructorTroubleToo;
 import lab.mon.actlab.java.reflect.construct.RestoreAliases;
@@ -97,8 +99,9 @@ public class ReflectActivity<T, V> extends AppCompatActivity implements View.OnC
 //        ConstructorTroubleToo.main();
 //        ConstructorTroubleAgain.main();
 //        ConstructorTroubleAgain.main("int");
-        ConstructorTroubleAgain.main("Object");
-
+//        ConstructorTroubleAgain.main("Object");
+//        ArrayFind.main("java.nio.ByteBuffer");
+        ArrayCreator.main();
         try {
             getFiledClass();
         } catch (NoSuchFieldException e) {

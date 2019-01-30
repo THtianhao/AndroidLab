@@ -1,6 +1,5 @@
 package lab.mon.actlab.java.reflectInter;
 
-import android.graphics.Interpolator;
 import android.util.Log;
 
 import java.lang.reflect.InvocationHandler;
