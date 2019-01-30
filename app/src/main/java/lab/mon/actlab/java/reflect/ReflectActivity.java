@@ -5,7 +5,9 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import lab.mon.actlab.R;
-import lab.mon.actlab.java.reflectInter.ReflectMain;
+import lab.mon.actlab.java.reflect.construct.ConstructorTroubleAgain;
+import lab.mon.actlab.java.reflect.construct.ConstructorTroubleToo;
+import lab.mon.actlab.java.reflect.construct.RestoreAliases;
 
 import java.lang.reflect.Field;
 import java.util.HashSet;
@@ -83,8 +85,20 @@ public class ReflectActivity<T, V> extends AppCompatActivity implements View.OnC
 //        deet.main(Deet.class.getCanonicalName(),"xx", "XX", "XX");
 //        InvokeMain invokeMain = new InvokeMain();
 //        invokeMain.main( Deet.class.getCanonicalName(),Deet.class.getCanonicalName(), "ja", "JP", "JP");
-        ReflectMain reflectMain = new ReflectMain();
-        reflectMain.reflectinterMain();
+//        ReflectMain reflectMain = new ReflectMain();
+//        reflectMain.reflectinterMain();
+//        ConstructorSift constructorSift = new ConstructorSift();
+//        constructorSift.main("java.util.Formatter", "java.util.Locale");
+//        constructorSift.main("java.lang.String", "[C");
+//        ConstructorAccess constructorAccess = new ConstructorAccess();
+//        constructorAccess.main("java.io.File","private");
+//        RestoreAliases restoreAliases = new RestoreAliases();
+//        restoreAliases.main();
+//        ConstructorTroubleToo.main();
+//        ConstructorTroubleAgain.main();
+//        ConstructorTroubleAgain.main("int");
+        ConstructorTroubleAgain.main("Object");
+
         try {
             getFiledClass();
         } catch (NoSuchFieldException e) {

@@ -7,6 +7,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 import lab.mon.actlab.adapter.AdapterActivity
 import lab.mon.actlab.animations.AnimActivity
 import lab.mon.actlab.component.ComponseActivity
+import lab.mon.actlab.interProcess.InterProcess
 import lab.mon.actlab.java.reflect.ReflectActivity
 import lab.mon.actlab.json.JsonActivity
 
@@ -33,6 +34,9 @@ class MainActivity : AppCompatActivity() {
         }
         mian_reflect.setOnClickListener {
             startActivity(Intent(this, ReflectActivity::class.java))
+        }
+        inter_process.setOnClickListener {
+            startActivity(Intent(this, InterProcess::class.java))
         }
     }
 }
