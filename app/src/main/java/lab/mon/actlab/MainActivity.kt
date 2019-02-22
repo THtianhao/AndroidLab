@@ -6,6 +6,7 @@ import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
 import lab.mon.actlab.adapter.AdapterActivity
 import lab.mon.actlab.animations.AnimActivity
+import lab.mon.actlab.basis.BasicActivity
 import lab.mon.actlab.component.ComponseActivity
 import lab.mon.actlab.interProcess.InterProcess
 import lab.mon.actlab.java.reflect.ReflectActivity
@@ -38,5 +39,9 @@ class MainActivity : AppCompatActivity() {
         inter_process.setOnClickListener {
             startActivity(Intent(this, InterProcess::class.java))
         }
+        basic.setOnClickListener {
+            startActivity(Intent(this, BasicActivity::class.java))
+        }
+        Alth().twoSum(intArrayOf(3, 2, 4), 6)
     }
 }
